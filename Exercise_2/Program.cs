@@ -10,13 +10,7 @@ namespace CustomExtensions
     {
         public static string CaptionFirst(this String str)
         {
-            if (str.Length == 0) return str;
-            string captionFirstString = str[0].ToString().ToUpper();
-            for (int i = 1; i < str.Length; i++)
-            {
-                captionFirstString += str[i].ToString().ToLower();
-            }
-            return captionFirstString;
+            return str[0].ToString().ToUpper() + str.Substring(1).ToLower();
         }
     }
 }
