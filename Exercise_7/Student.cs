@@ -26,9 +26,9 @@ namespace Exercise_7
 
         public override string ToString()
         {
-            return "Name: " + Name + "\tBirthday: "
-                   + Birthday.ToString("yyyy-M-d dddd")
-                   + "\tScore: " + Score;
+            return $"Name: {Name}\tBirthday: {Birthday.ToString("yyyy-M-d dddd")}\tScore: {Score}";
+
+
         }
     }
 }
